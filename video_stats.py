@@ -32,7 +32,6 @@ def get_video_ids(playlistId):
     pageTokens = None
     
     base_url = f"https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults={maxResults}&playlistId={playlistId}&key={API_KEY}"
-    #base_url = f"https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults={maxResults}&playlistId=UUX6OQ3DkcsbYNE6H8uQ0QvA&key={API_KEY}"
     try:
        while True:
           url = base_url
